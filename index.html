@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Units Status Checker</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa fa-shield"></i> SafePatrol</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            File
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#aboutModal"><i
+                                        class="fa fa-info-circle" aria-hidden="true"></i>
+                                    About</a>
+                            </li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#helpModal"><i
+                                        class="fa fa-question-circle" aria-hidden="true"></i>
+                                    Help</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" id="reload" href="javascript:location.reload(true)"><i
+                                        class="fa fa-refresh" aria-hidden="true"></i>
+                                    Restart
+                                    App</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Body Content -->
+
+    <div class="container">
+        <h1 class="main-header">Security Units Status Checker</h1>
+        <p class="main-screen">
+            <button class="zone1 btn btn-primary unit">Zone 1</button>
+            <button class="zone2 btn btn-primary unit">Zone 2</button>
+            <button class="flightline btn btn-primary unit">Flight Line</button>
+            <button class="s7 btn btn-primary unit">S7</button>
+            <button class="s8 btn btn-primary unit">S8</button>
+            <button class="puertogate btn btn-primary unit">Puerto Gate</button>
+            <button class="rotagate btn btn-primary unit">Rota Gate</button>
+            <button class="pier1 btn btn-primary unit">Pier 1</button>
+            <button class="r1 btn btn-primary unit">R1</button>
+        </p>
+
+    
+    </div>
+
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalLabel">About SafePatrol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Version: 1.0<br>
+                    Developed by Rocky Rasakith.<br>
+                    <em>Built for use at EM Department, Naval Station Rota, Spain</em>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help Modal -->
+
+    <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel">About SafePatrol</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Use SafePatrol when conducting status and location checks!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

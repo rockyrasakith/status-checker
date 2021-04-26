@@ -1,0 +1,19 @@
+.btn-primary {
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 10px 20px 0 #333333, 0px 0px 0px 0 #333333;
+}
+
+.main-header {
+    letter-spacing: 3px;
+    margin: 20px 0 20px 10px;
+}
+
+.nav-link {
+    margin: 0 5px 0 5px;
+}
+
