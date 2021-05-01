@@ -25,8 +25,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
                             File
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -46,6 +46,18 @@
                                     Restart
                                     App</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Edit
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#unitsModal"><i
+                                        class="" aria-hidden="true"></i>
+                                    Edit Units</a>
+                            </li>
+
                     </li>
                 </ul>
             </div>
@@ -67,9 +79,8 @@
             <button class="rotagate btn btn-primary unit">Rota Gate</button>
             <button class="pier1 btn btn-primary unit">Pier 1</button>
             <button class="r1 btn btn-primary unit">R1</button>
+            <button class="cvis btn btn-primary unit">CVIS</button>
         </p>
-
-    
     </div>
 
 
@@ -99,7 +110,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="helpModalLabel">About SafePatrol</h5>
+                    <h5 class="modal-title" id="helpModalLabel">Help</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -113,7 +124,40 @@
     </div>
 
 
+    <!-- Select Units Modal -->
 
+    <div class="modal fade" id="unitsModal" tabindex="-1" aria-labelledby="unitsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="helpModalLabel">Help</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Select the units on duty.
+                    </p>
+                   <input type="checkbox" id="zone1"> Zone 1
+                   <input type="checkbox" id="zone2"> Zone 2
+                   <input type="checkbox" id="flightline"> Flight Line
+                   <input type="checkbox" id="sierra7"> S7
+                   <input type="checkbox" id="sierra8"> S8
+                   <input type="checkbox" id="r1"> R1
+                   <input type="checkbox" id="puertogate"> Puerto Gate
+                   <input type="checkbox" id="rotagate"> Rota Gate
+                   <input type="checkbox" id="pier1"> Pier 1
+                   <input type="checkbox" id="cvis"> CVIS
+                   
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning save-button" data-bs-dismiss="modal">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/app.js"></script>
 </body>
